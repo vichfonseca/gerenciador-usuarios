@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sistema: Cadastro Usuário</title>
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-default" style="background: #f5f5f5;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="color: #000;">Nome do sistema</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000;">Sistema <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Opções</a></li>
+            <li><a href="#">Configurações</a></li>
+            <li><a href="#">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <ul class="nav navbar-nav">
+      	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000;">Usuários <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Exemplo</a></li>
+            <li><a href="#">Exemplo</a></li>
+            <li><a href="#">Exemplo</a></li>
+          </ul>
+        </li>
+      </ul>
+
+       <ul class="nav navbar-nav">
+      	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#000;"> Menus <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Exemplo</a></li>
+            <li><a href="#">Exemplo</a></li>
+            <li><a href="#">Exemplo</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav">
+      	<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color:#000;">Ajuda <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Exemplo</a></li>
+            <li><a href="#">Exemplo</a></li>
+            <li><a href="#">Exemplo</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+		<ul class="dropdown-menu">
+            <li><a href="#">Exemplo</a></li>
+            <li><a href="#">Exemplo</a></li>
+            <li><a href="#">Exemplo</a></li>
+          
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+
+
+		<div class="panel panel-default">
+			<div class="container-default">
+  				<div class="panel-body">
+   					 <h4>Gerenciador de Usuários: Sistema</h4>
+  				</div>
+			</div>
+			</div>
+
+
+
+			<nav class="navbar navbar-default" id="nv">
+  				<div class="container-fluid">
+  					<button type="button" class="btn btn-default navbar-btn button1 data-target" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="color: #fff" >Novo</button>
+  					<button type="button" class="btn btn-default navbar-btn button2">Editar</button>
+  					<button type="button" class="btn btn-default navbar-btn button3">Ativar</button>
+  					<button type="button" class="btn btn-default navbar-btn button4">Bloquear</button>
+  					<button type="button" class="btn btn-default navbar-btn button5">Desbloquear</button>
+  					<button type="button" class="btn btn-default navbar-btn button6">Excluir</button>
+  					<button type="button" class="btn btn-default navbar-btn button7">Ajuda</button>
+  					<button type="button" class="btn btn-default navbar-btn button8">Opções</button>
+  					<button type="button" class="btn btn-default navbar-btn button3">Ferramentas</button>
+  				</div>
+  			</nav>
+		</div>
+
+		
+		<div class="sidenav col-lg-2">
+  			<a href="javacript:void(0)" id="index-button">Usuários</a>
+  			<a href="javacript:void(0)" id="servicos-button">Serviços</a>
+  			<a href="javacript:void(0)" id="notasusuario-button">Notas de usuário</a>
+  			<a href="javacript:void(0)" id="grupos-button">Grupos</a>
+		</div>
+
+
+		<div class="content-full">
+  
+
+	  <div class="col-lg-10">
+
+	  	<div id="index">
+		    <div class="input-group" style="float:left">
+		      <input type="text" class="form-control" placeholder="Buscar">
+		      <span class="input-group-btn">
+		        <button class="btn btn-default" type="button" style="float:left">Pesquisar</button>
+
+		      </span>
+
+		    </div>
+
+
+
+		 <table class="table">
+	  		<thead>
+				 <tr>
+				   <th></th>
+				    <th>Nome</th>
+				    <th>Nome de Usuário</th>
+				    <th>Email</th>
+				  </tr>
+			</thead>
+				  
+			<tbody>
+				<tr>
+				  <th scope="row"></th>
+				    <td>Nome</td>
+				    <td>Nome de usuário</td>
+				    <td>exemplo@.com.br</td>
+				 </tr>
+				    
+				 <tr>
+				   <th scope="row"></th>
+				    <td>Nome</td>
+				    <td>Nome de usuário</td>
+				    <td>exemplo@.com.br</td>
+				    </tr>
+				 <tr>
+				      
+				 <th scope="row"></th>
+				   <td>Nome</td>
+				    <td>Nome de usuário</td>
+				    <td>exemplo@.com.br</td>
+				  </tr>
+  			</tbody>
+		</table>
+ 	</div>
+
+	 
+	    <div id="servicos">	
+	    	Serviços
+	    </div>
+
+	    <div id="notasusuario">	
+	    	Nota Usuário
+	    </div>
+
+	    <div id="grupos">	
+	    	Grupos
+	    </div>
+
+	</div><!-- /.col-lg-6 -->
+
+
+</div><!-- /.row -->
+
+	
+  		</nav>
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<span>Cadastro do Usuário</span>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="modal-body">
+		 <form class="form-horizontal" action="sucesso.html" method="POST">
+		<fieldset>
+
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="idNome">Nome</label>  
+		  <div class="col-md-5">
+		  <input id="idNome" name="idNome" type="text" placeholder="Nome do usuaário" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="idDepto">Departamento</label>  
+		  <div class="col-md-5">
+		  <input id="idDepto" name="idDepto" type="text" placeholder="Nome do departamento" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="idUsuario">Usuário</label>  
+		  <div class="col-md-5">
+		  <input id="idUsuario" name="idUsuario" type="text" placeholder="Login do usuario" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="idSenha">Senha</label>
+		  <div class="col-md-5">
+		    <input id="idSenha" name="idSenha" type="password" placeholder="Digite a senha" class="form-control input-md" required="">
+		    
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="idAdmin">Nível</label>
+		  <div class="col-md-5">
+		    <select id="idAdmin" name="idAdmin" class="form-control">
+		      <option value="1">Administrador</option>
+		      <option value="2">Usuário</option>
+		    </select>
+		  </div>
+		</div>
+
+		<!--
+		<div class="form-group">
+		  <label class="col-md-4 control-label" for="idConfirmar"></label>
+		  <div class="col-md-8">
+		    <button id="idConfirmar" name="idConfirmar" class="btn btn-primary">confirmar</button>
+		    <button id="idCancelar" name="idCancelar" class="btn btn-danger">Cancelar</button>
+		  </div>
+		</div>
+		-->
+
+		</fieldset>
+
+        
+      </div>
+      <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+</body>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+
+
+$( "#usuarios-button" ).click(function() {
+
+	$("#index").fadeIn();
+	$("#notasusuario").hide();
+	$("#grupos").hide();
+	$("#servicos").hide();
+
+});
+
+$( "#servicos-button" ).click(function() {
+
+	$("#index").hide();
+	$("#notasusuario").hide();
+	$("#grupos").hide();
+	$("#servicos").fadeIn();
+
+});
+
+$( "#notasusuario-button" ).click(function() {
+
+	$("#index").hide();
+	$("#servicos").hide();
+	$("#grupos").hide();
+	$("#notasusuario").fadeIn();
+
+});
+
+$( "#grupos-button" ).click(function() {
+
+	$("#index").hide();
+	$("#servicos").hide();
+	$("#notasusuario").hide();
+	$("#grupos").fadeIn();
+
+});
+
+$( "#index-button" ).click(function() {
+
+	$("#index").fadeIn();
+	$("#notasusuario").hide();
+	$("#grupos").hide();
+	$("#servicos").hide();
+
+});
+
+</script>
+
+
+</html> 
+
+
+   <!-- /.container-fluid -->
